@@ -1,0 +1,28 @@
+You are an expert academic research assistant specializing in Deep Learning and Bioinformatics/Metabolic Modeling. Your task is to perform a highly technical and structured analysis of the following scientific paper.Analyze the paper and output the results in two distinct sections: first, a detailed Markdown Table (Section 1) containing all required metadata and quantitative results; second, a Structured Summary (Section 2) for qualitative information.
+
+Section 1: Structured Data and Metrics (Markdown Table)
+Generate a single Markdown table with the following strict column headers. If a specific piece of information (e.g., GitHub link, specific metric like AUC) is not found, populate that cell with "N/A".
+
+- DOI [Extract the DOI]
+- Year [Extract the publication year]
+- Title [Extract the full paper title]
+- Source Publisher Name [Extract the publisher name (e.g., Nature Communications, IEEE T-BME)]
+- Reference Paper URL [Extract the main link to the paper (if present/obvious)]
+- Dataset(s) Used [List all primary datasets, clearly noting if APOLLO is used or a similar metabolic/biomarker dataset]
+- Number of Samples [Extract the total number of samples/patients/measurements used for training/testing]
+- Softwares Used (Key Tools) [List all critical software libraries, frameworks, or tools (e.g., TensorFlow, PyTorch, Scikit-learn)]
+- Proposed Method Name [State the official name of the proposed Deep Learning architecture/model]
+- Feature Extraction Method & Details [Specifically describe how raw data was converted to features (e.g., PCA, autoencoders, specific pathway analysis). Include the final number of features used as an approximate count or range.]
+- Accuracy (or equivalent) [Extract the highest reported Accuracy value for the main task]
+- Precision [Extract the highest reported Precision value]
+- F1-score [Extract the highest reported F1-score value]
+- AUC/AUROC [Extract the highest reported Area Under the ROC Curve value]
+- Other Key Metric [Extract one other significant performance metric not already listed (e.g., Sensitivity, Specificity, Loss Value)]
+- GitHub Repository Link [Extract the link to the official code repository]
+
+Section 2: Technical Summary (Structured Bullet Points)
+Provide a very technical, concise, and structured summary using the following headings:
+- Short Description of Contribution: (3-4 concise sentences) Summarize the paper's core objective and its unique contribution to the field of metabolic modeling.
+- Detailed Methodology/Architecture: (Focus on the 'how') Describe the specific Deep Learning architecture (e.g., "A 1D-CNN with 3 convolutional layers followed by a fully-connected classifier") and how it was tuned/trained (e.g., activation function, optimization algorithm, unique loss function).
+- Discussion of Key Findings and Biological Relevance: (Focus on the 'why it matters') Explain the main quantitative results and briefly discuss the biological or clinical significance of these findings as stated by the authors.
+- Limitations and Future Work: (Focus on the 'critique') Identify and list the primary limitations of the study's method or data, as acknowledged in the Discussion/Conclusion.
